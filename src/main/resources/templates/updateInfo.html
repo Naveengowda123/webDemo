@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+     <head>
+           <meta charset="ISO-8859-1">
+           <title>Update</title>
+           <style>
+			   ul{
+				list-style-type: none;
+				margin-top: 0px;
+				padding: 0px;
+				margin-left: 100px;
+			}
+			
+			a{
+				width: 200px;
+			    text-decoration: none;
+				display: block;
+				text-align: center;
+				background-color: black;
+				color: aliceblue;
+				margin: 10px;
+				margin-left: 50px;
+				border: 15px groove;	
+				float: left;
+			}
+			
+			form{
+				display: block;
+				text-align: center;
+				border: 10px solid cadetblue;
+				height: 150px;
+				width: 500px;
+				margin-left: 400px;
+				margin-top: 200px;
+				padding-top: 25px;
+				background-color: lightskyblue;
+				
+			}
+		   </style>
+     </head>
+     <body>
+		 <h1 style="color: darkblue; font-family: fantasy;text-align: center;">STUDENT UPDATE DETAILS PAGE</h1>
+          <ul>
+			  <li> <a href="/ind">HOME</a></li>
+			  <li><a href="/view">VIEW STUDENT</a></li>
+			  <li><a href="/reg">REGISTER AS STUDENT</a></li>
+			  <li><a href="/rem">DELETE STUDENT</a></li>
+		 </ul>
+		 
+		 <form action="updS" method="post">
+			 <input type="hidden" name="_method" value="put">
+			 
+			<label style="padding-right: 48px;background-color: lightcyan;">ENTER STUDENT ID</label>
+			<input type="text" name="rollno">
+			<br><br>
+			<label style="padding-right: 17px; background-color: lightcyan;">ENTER STUDENT NAME</label>
+			<input type="text" name="nameS">
+			<br><br>
+			<label style="background-color: lightcyan;">ENTER STUDENT BRANCH</label>
+			<input type="text" name="bran">
+			<br><br>
+			<input type="submit" style="background-color: darkseagreen;width: 100px;" value="UPDATE">
+		</form>
+     </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="ISO-8859-1">
+        <title>View Info</title>
+        <style>
+			*{
+				background-color: lightblue;
+			}
+			ul{
+				list-style-type: none;
+				margin-top: 0px;
+				padding: 0px;
+				margin-left: 100px;
+			}
+			
+			a{
+				width: 200px;
+			    text-decoration: none;
+				display: block;
+				text-align: center;
+				background-color: black;
+				color: aliceblue;
+				margin-left: 50px;
+				border: 15px groove;	
+				float: left;
+			}
+			form{
+				
+				text-align: center;
+				border: 10px solid cadetblue;
+				height: 68px;
+				width: 500px;
+				margin-left: 400px;
+				margin-top: 200px;
+				padding-top: 25px;
+				background-color: aqua;
+			}
+		</style>
+  </head>
+  <body>
+	    <h1 style="color: darkblue; font-family: fantasy;text-align: center;">VIEW INFO PAGE</h1>
+        <ul id="view">
+			<li> <a href="/ind">HOME</a></li>
+			<li><a href="/reg">REGISTER AS STUDENT</a></li>
+			<li><a href="/upd">UPDATE STUDENT</a></li>
+			<li><a href="/rem">DELETE STUDENT</a></li>
+		</ul>
+		
+		<form action="getStu" method="get" id="one">
+			<label>ENTER STUDENT ROLL_NO</label>
+			<input type="text" name="rollno" style="text-align: center;">
+			<br><br>
+			<input type="submit" style="text-align: center; width: 100px;border: 5px solid lightslategrey;background-color: antiquewhite;">
+		</form>
+		
+		<form action="/showAll" method="get" id="two" style="margin-top: 100px;background-color: aquamarine;">
+			<input type="submit" value="VIEW ALL STUDENTS DETAILS" style="width: 400px; height: 50px;font-size: large;font-family: fantasy;">
+		</form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="ISO-8859-1">
+         <title>Student Detail</title>
+        
+    </head>
+    <body>
+		 <h2 style="color: blueviolet;text-align: center;">SHOWING STUDENT DETAILS</h2>
+          <table style="text-align: center; margin-left: 550px;" border>
+			  <tr>
+				  <th>roll_no</th>
+				  <th>name</th>
+				  <th>branch</th>
+			  </tr>
+			  <tr>
+				  <td th:text="${stud.roll}"></td>
+				  <td th:text="${stud.name}"></td>
+				  <td th:text="${stud.branch}"></td>
+			  </tr>
+		  </table>
+    </body>  
+</html>
